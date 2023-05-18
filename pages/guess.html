@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/guess.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body class="body">
+    <header>
+      <h1 id="display">Guess My Number!</h1>
+      <p class="between">(Between 1 and 5)</p>
+      <div class="number">?</div>
+    </header>
+    
+    <div class="congrats">
+      <p>CONGRATULATIONS BUDDY!!!</p>
+    </div>
+
+    <!-- for audio -->
+    <audio id="for-correct" src="../assets/mixkit-cartoon-positive-sound-2255.wav"></audio>
+    <audio id="for-wrong" src="../assets/mixkit-game-show-wrong-answer-buzz-950.wav"></audio>
+    <audio id="for-game-over" src="../assets/mixkit-funny-fail-low-tone-2876.wav"></audio>
+
+
+    <main class="container">
+      <section class="left">
+        <p class="message">Start guessing...</p>
+        <input class="guess" placeholder="?"/>
+        <!-- <h6>(Numbers Ranging from 1 to 5)</h6> -->
+        <p class="warning"></p>
+        <div class="disp">
+          <button class="btn check">Check!</button>
+        <button class="btn again">Play again!</button>
+        </div>
+
+      </section>
+
+      <section class="right">
+        <!-- <p class="message">Start guessing...</p> -->
+        <p class="label-score">💯 Trials: <span class="trials">5</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+
+      
+      
+    </main>
+    <div class="footer" style="display: block ;width: 80%; margin: auto;">
+        <small>&copy <span style="color: grey;">Gerald-Games</span> All right reserved</small>
+      </div>
+    <script src="../scripts/guess.js"></script>
+  </body>
+</html>
