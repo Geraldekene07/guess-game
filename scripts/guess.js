@@ -62,7 +62,7 @@ if (guess.value == null || guess.value < 1 || guess.value > 5 || guess.value == 
     body.classList.remove("body")
     body.classList.add("correct")
     
-    // guess.innerHTML = ""
+    // guess.innerHTML = "
     // number.innerHTML = "?"
     
 
